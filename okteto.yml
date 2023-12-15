@@ -1,0 +1,17 @@
+dev:
+  okteto-cli:
+    remote: 22223
+    forward:
+      - 3002:3002 # Webserver
+    autocreate: true
+    image: register-gitlab.ecom.ejot.com:4567/devops/container/bun:0.0.1
+    workdir: /app
+    command: ["bash"]
+    sync:
+      - .:/app
+    environment:
+    persistentVolume:
+      enabled: false
+      size: 6Gi
+    volumes:
+      - /root/.vscode-server

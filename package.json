@@ -1,0 +1,16 @@
+{ "type":"module",
+  "scripts": {
+    "build:win": "bun build entry.ts --minify --target=node --outdir=.out/bundle/ && pkg ./.out/bundle/entry.js --t win --output ./out/standalone/LazyOkteto.exe",
+    "build:lin": "bun build entry.ts --compile --outfile=LazyOkteto",
+    "bump": "bunx taze major -w"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^3.3.0",
+    "@types/inquirer": "^9.0.7",
+    "c12": "^1.5.1",
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.12",
+    "pkg": "^5.8.1",
+    "yaml": "^2.3.4"
+  }
+}

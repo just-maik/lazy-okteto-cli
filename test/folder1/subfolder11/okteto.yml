@@ -1,0 +1,6 @@
+dev:
+    frontend-1:
+        remote: 2222
+        forward:
+            - 3000:3000 # Webserver
+            - 24678:24678 # Devserver Websocket
