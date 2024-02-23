@@ -1,5 +1,13 @@
 # 🚀 Lazy-Okteto-CLI 🚀
 
+## 🛠️ Work in progress 🛠️
+
+Hey, I started this little cli project because I needed it dealing with nested projects folder's.
+I was using multiple batch or sh files to start my containers.
+
+The project is heavily under construction and will be ready to use when the first npm package releases.
+
+
 ## What is Lazy-Okteto-CLI? 🤔
 **Lazy-Okteto-CLI** is a tool that scans for `okteto.yml` files in your projects and lets you select which one to activate with `okteto up` via a CLI interface. It streamlines working with multiple Okteto environments, saving time and effort.
 
@@ -25,6 +33,16 @@ Create a `lazy-okteto.config.(ts|json|yml|js)` file in the directory where you r
 - **depth**: How deep the scan should go.
 - **oktetoPath**: Custom path to your Okteto CLI.
 - **directory**: Specific directory to scan.
+
+These are the defaults used if no config is present
+
+```ts
+{
+  oktetoExecutablePath: "$USER/AppData/Local/Programs/okteto.exe",
+  includedFoldersDepth: 3,
+  directory: "./",
+}
+```
 
 This optional configuration allows for greater flexibility and control over how **Lazy-Okteto-CLI** operates within your projects.
 
