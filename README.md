@@ -47,9 +47,14 @@ These are the defaults used if no config is present
 This optional configuration allows for greater flexibility and control over how **Lazy-Okteto-CLI** operates within your projects.
 
 ## Features 🌟
+#### Current:
 - **Recursive Scan**: Finds every `okteto.yml` file, regardless of nesting.
 - **CLI Select Interface**: Easy selection of environments.
 - **Customizable**: Configure scan depth, Okteto CLI path, and directories to scan.
+#### Planned:
+- support for excluding directories.
+- handling the different okteto commands (up,down, etc.).
+- adjust config naming
 
 ## Requirements 📋
 - Node.js (LTS Version)
